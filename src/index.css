@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  background-color: #EFEDEE;
+  scrollbar-width: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  /* chap o‘ngdan joy qoldiradi */
+}
+
+/* Tablet */
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 860px;
+    padding: 0 18px;
+  }
+}
+
+/* Kichik tablet / katta telefon */
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 700px;
+    padding: 0 16px;
+  }
+}
+
+/* Telefonlar uchun */
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 100%;
+    padding: 0 14px;
+  }
+}
