@@ -1,0 +1,33 @@
+const translationsUz = {
+  home: `Bosh Sahifa`,
+  works: `Bizning Ishlar`,
+  contact: `Aloqa`,
+  ganch: ` Ganch O'ymakorligi`,
+  p1: `Biz sizning uyingizga o‘ziga xoslik bag‘ishlaydigan dekor va suvenirlarni gipsdan qo‘lda yasaymiz. Har bir buyum — bu san’at, mehr va mahorat natijasi.`,
+  p2: `Gips — bu oddiy material emas, u tasavvur va mahorat bilan uyg‘unlashganda san’at asariga aylanadi. Biz har bir buyumni qo‘lda tayyorlab, unga ruh va jon baxsh etamiz.`,
+  p3: `Har bir buyum o‘ziga xos: shakl, faktura va bezaklari bilan. Ish jarayoni — sinchkovlik, sabr va ijodiy yondashuvni talab qiladi. Shu bois, har bir mahsulot o‘z hikoyasiga ega.`,
+  p4: `Bizning gips buyumlarimiz ichki makonga nafislik, iliqlik va o‘ziga xos ruh bag‘ishlaydi. Klasik yoki zamonaviy uslubda — har qanday interyerni to‘ldiradi.`,
+  p5: `Har bir suvenir — bu qo‘lda ishlangan, sevgi bilan tayyorlangan buyum. U nafaqat bezak, balki esdalik, qadriyat va his-tuyg‘ular ramzidir.`,
+  bizning_ishlar: `Bizning Ishlar`, 
+  ishlar1: `Savg'alar tayyorlash`, 
+  ishlar2: `Gips buyumlar yasash`, 
+  ishlar3: `Dekor bezak yasash`,
+  ishlar4: `Interyer bezaklari`,
+  ishlar5: `Suvinerdan Guldastalar`,
+  ishlar6: `Savg'alar tayyorlash`,
+  ishlar7: `Savg'alar tayyorlash`,
+  ishlar8: `Gilsdan Yangi Maxsulotlar`,
+  ishlar9: `Savg'alar tayyorlash`,
+  toliqMalumot: `To'liq Malumot`, 
+  showMore: `Ko'roq...`, 
+  Back: `Orqaga`, 
+  Bizbilanboglaning: `Biz bilan bog‘laning`, 
+  Savollaringizbolsa: `Savollaringiz bo‘lsa yoki hamkorlikka taklif bermoqchi bo‘lsangiz, biz bilan quyidagi kanallar orqali bog‘laning.`, 
+  Telegram: `Telegram`,
+  Instagram: `Instagram`, 
+  Email: `Email`, 
+  day: `kun`,
+  sum: "so'm"
+};
+
+export default translationsUz;

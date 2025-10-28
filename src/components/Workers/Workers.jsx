@@ -1,5 +1,9 @@
+import { useTranslation } from "react-i18next";
 import "./Workers.css";
 const ContactForm = () => {
+
+  const {t, i18n} = useTranslation()
+
   return (
     <>
       <section className="ContactForm" id="Contact">
@@ -7,10 +11,9 @@ const ContactForm = () => {
           {/* === CONTACT BOX === */}
           <div className="contact_box">
             <div className="contact_info">
-              <h2>Biz bilan bog‘laning</h2>
+              <h2>{t(`Bizbilanboglaning`)}</h2>
               <p className="contact_desc">
-                Savollaringiz bo‘lsa yoki hamkorlikka taklif bermoqchi bo‘lsangiz, biz bilan quyidagi
-                kanallar orqali bog‘laning.
+                  {t(`Savollaringizbolsa`)}
               </p>
 
               <div className="social_links">
@@ -20,7 +23,7 @@ const ContactForm = () => {
                   rel="noopener noreferrer"
                   aria-label="Telegram"
                 >
-                  <i className="fa-brands fa-telegram"></i> Telegram
+                  <i className="fa-brands fa-telegram"></i> {t(`Telegram`)}
                 </a>
                 <a
                   href="https://instagram.com/golimov848gmail.com_
@@ -29,7 +32,7 @@ const ContactForm = () => {
                   rel="noopener noreferrer"
                   aria-label="Instagram"
                 >
-                  <i className="fa-brands fa-instagram"></i> Instagram
+                  <i className="fa-brands fa-instagram"></i> {t(`Instagram`)}
                 </a>
                 <a href="tel:+998934748880" aria-label="Telefon">
                   <i className="fa-solid fa-phone"></i> +998 (99) 707‒63‒24
@@ -37,7 +40,7 @@ const ContactForm = () => {
 
                 <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ogabekomonov79@gamil.com" target="_blank"
                   rel="noopener noreferrer" aria-label="Telefon">
-                  <i class="fa-solid fa-envelope"></i> Email
+                  <i class="fa-solid fa-envelope"></i> {t(`Email`)}
                 </a>
               </div>
             </div>
