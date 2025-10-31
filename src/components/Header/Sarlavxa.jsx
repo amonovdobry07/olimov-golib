@@ -10,7 +10,7 @@ const Sarlavxa = () => {
         <div className="flex items-center justify-center min-h-screen w-full">
           <CircularText
             className="header-text-animate"
-            text={["Ganch O'ymakorlik BIlan Zaqlaning"]}
+            text={["Ganch O'ymakorlik Bilan Zaqlaning"]}
             typingSpeed={75}
             pauseDuration={500}
             showCursor={true}

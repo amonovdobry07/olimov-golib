@@ -113,7 +113,7 @@ const About = () => {
             {ishlar.slice(0, visible).map((card) => {
               const isOpen = openCards.includes(card.id);
               return (
-                <div className="cards" key={card.id}>
+                <div className="cards" key={card.id} data-aos="fade-up" data-aos-duration="1500">
                   <div
                     className="cards-img"
                     style={{ backgroundImage: `url(${card.rasm})` }}

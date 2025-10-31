@@ -9,7 +9,7 @@ const ContactForm = () => {
       <section className="ContactForm" id="Contact">
         <div className="containerr">
           {/* === CONTACT BOX === */}
-          <div className="contact_box">
+          <div className="contact_box" data-aos="fade-up" data-aos-duration="1500" >
             <div className="contact_info">
               <h2>{t(`Bizbilanboglaning`)}</h2>
               <p className="contact_desc">

@@ -4,96 +4,130 @@ import { HiBars3CenterLeft } from "react-icons/hi2";
 import { IoCloseSharp } from "react-icons/io5";
 import { useEffect, useState } from "react";
 import Sarlavxa from "./Sarlavxa";
-import logo from "../../assets/pictures/logo.png"
-import video1 from "../../assets/pictures/video1.mp4"
+import logo from "../../assets/pictures/logo.png";
+import video1 from "../../assets/pictures/video1.mp4";
 import { useTranslation } from "react-i18next";
-import { FaRotate } from "react-icons/fa6";
-
 
 const Header = () => {
   const [showheader, setShowHEader] = useState(false);
-  const [backwhite, setBackWhite] = useState(false)
+  const [backwhite, setBackWhite] = useState(false);
+  const [animateHeader, setAnimateHeader] = useState(false); // 🔥 faqat header-container uchun animatsiya
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
+    const handleScroll = () => {
       if (window.scrollY > 100) {
-        setBackWhite(true)
+        setBackWhite(true);
       } else {
-        setBackWhite(false)
+        setBackWhite(false);
       }
-    })
-  })
+    };
+    window.addEventListener("scroll", handleScroll);
 
-  const { t, i18n } = useTranslation()
+    // sahifa yuklanganda animatsiyani yoqamiz
+    setTimeout(() => {
+      setAnimateHeader(true);
+    }, 100);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const { t, i18n } = useTranslation();
+
   return (
     <header>
       <div className="header-back">
-        <video src={video1} className="header-video"
+        <video
+          src={video1}
+          className="header-video"
           autoPlay
           muted
-          preload="metadate"
+          preload="metadata"
           loop
         ></video>
+
         <div className="header-overlay"></div>
-        <div className={backwhite ? "container header-container white" : "container header-container "}>
+
+        <div
+          className={
+            backwhite
+              ? `container header-container white ${animateHeader ? "fade-in" : ""}`
+              : `container header-container ${animateHeader ? "fade-in" : ""}`
+          }
+        >
           <div className="header-logo">
-            <img src={logo} />
+            <img src={logo} alt="logo" />
           </div>
+
           <div
             className="header-bars"
             onClick={() => setShowHEader(!showheader)}
           >
             {showheader ? <IoCloseSharp className="rotate" /> : <HiBars3CenterLeft />}
           </div>
-          <ul className={showheader ? "active" : " "}>
+
+          <ul className={showheader ? "active" : ""}>
             <div className="xx" onClick={() => setShowHEader(false)}>
               <IoCloseSharp />
             </div>
             <li>
               <a href="#Sarlavxa" onClick={() => setShowHEader(false)}>
-                {t(`home`)}
+                {t("home")}
               </a>
             </li>
-
             <li>
               <a href="#About" onClick={() => setShowHEader(false)}>
-                {t(`works`)}
+                {t("works")}
               </a>
             </li>
-
-            {/* <li>
-              <a href="#Work" onClick={() => setShowHEader(false)}>
-                Work situation
-              </a>
-            </li> */}
-
             <li>
               <a href="#Contact" onClick={() => setShowHEader(false)}>
-                {t(`contact`)}
+                {t("contact")}
               </a>
             </li>
 
-            <select className="header-button" id="select"
-              onChange={(e) => { i18n.changeLanguage(e.target.value) }}
+            <select
+              className="header-button"
+              id="select"
+              onChange={(e) => {
+                i18n.changeLanguage(e.target.value);
+              }}
               defaultValue="uz"
             >
-              <option value="uz" class="flag-uz">🇺🇿 Uzbek</option>
-              <option value="ru" class="flag-ru">🇷🇺 Russian</option>
-              <option value="en" class="flag-en">🇬🇧 English</option>
+              <option value="uz" className="flag-uz">
+                🇺🇿 Uzbek
+              </option>
+              <option value="ru" className="flag-ru">
+                🇷🇺 Russian
+              </option>
+              <option value="en" className="flag-en">
+                🇬🇧 English
+              </option>
             </select>
           </ul>
 
-          <select className="header-contact"
+          <select
+            className="header-contact"
             id="select"
-            onChange={(e) => { i18n.changeLanguage(e.target.value) }}
+            onChange={(e) => {
+              i18n.changeLanguage(e.target.value);
+            }}
             defaultValue="uz"
           >
-            <option value="uz" class="flag-uz">🇺🇿 Uzbek</option>
-            <option value="ru" class="flag-ru">🇷🇺 Russian</option>
-            <option value="en" class="flag-en">🇬🇧 English</option>
+            <option value="uz" className="flag-uz">
+              🇺🇿 Uzbek
+            </option>
+            <option value="ru" className="flag-ru">
+              🇷🇺 Russian
+            </option>
+            <option value="en" className="flag-en">
+              🇬🇧 English
+            </option>
           </select>
         </div>
-        {/* Sarlavha */}
+
+        {/* Sarlavha qismi */}
         <Sarlavxa />
       </div>
     </header>
