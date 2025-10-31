@@ -4,6 +4,7 @@ import { HiBars3CenterLeft } from "react-icons/hi2";
 import { IoCloseSharp } from "react-icons/io5";
 import { useState } from "react";
 import Sarlavxa from "./Sarlavxa";
+import logo from "../../assets/pictures/logo.png"
 import { useTranslation } from "react-i18next";
 
 const Header = () => {
@@ -16,7 +17,7 @@ const Header = () => {
         <div className="header-overlay"></div>
         <div className="container header-container">
           <div className="header-logo">
-            <h1>Olimov Golib</h1>
+            <img src={logo} />
           </div>
           <div
             className="header-bars"
