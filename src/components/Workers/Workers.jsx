@@ -58,7 +58,17 @@ const ContactForm = () => {
       </section>
 
       <div className="coright">
-        <p>@Copyright  By  Amonoff    Web  {new Date().getFullYear()}</p>
+        <p>© 2025 OTABEK & MARAT. All rights reserved.</p>
+        <span>
+          Designed by{" "}
+          <a style={{ textDecoration: "none", color: "rgba(124, 120, 120, 1)", }}
+            href="https://t.me/buxoro_tadbirkorlar_klubi"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Buxoro Tadbirkorlari Biznes Klubi
+          </a>
+        </span>
       </div>
     </>
   );

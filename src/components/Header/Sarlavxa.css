@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins&display=swap');
 
 #Sarlavha {
     width: 100%;
@@ -17,40 +18,39 @@
     display: flex;
     align-items: center;
     margin-top: 100px;
+    justify-content: center;
 }
 
-.about-sarlavxa {
-    width: 50%;
-    height: 600px;
+.header-text-animate {
+    font-size: 46px;
+    color: white;
 }
 
-.about-sarlavxa img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
 
-
-}
 
 .sarlavxa-proces {
-    width: 50%;
-    align-content: center;
-    height: 600px;
-    padding: 10px 50px;
-    text-align: start;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+
 }
 
 .sarlavxa-proces h1 {
-    font-family: 'Poppins', sans-serif;
     font-optical-sizing: auto;
     font-size: 38px;
+    font-family: "Playfair Display", serif;
+    color: #4B2E05;
 }
 
 .sarlavxa-proces p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    line-height: 35px;
+    font-size: 19px;
+    color: #27241f;
 }
+
+
 
 
 
@@ -126,13 +126,11 @@
 
     .sarlavxa-proces {
         position: absolute;
-        top: 50%;
+        top: 100px;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 100%;
-        background: rgba(0, 0, 0, 0.55);
         color: #fff;
-        height: 400px;
         border-radius: 20px;
         padding: 20px;
         text-align: center;
@@ -146,7 +144,7 @@
 
     .sarlavxa-proces p {
         font-size: 14px;
-        line-height: 18px;
+        line-height: 25px;
     }
 
 }
@@ -155,22 +153,20 @@
 
 /* Big Tablet */
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    .about-sarlavxa img {
-        width: 100%;
-        height: 400px;
-        margin-top: 150px;
+
+    .sarlavha-container {
+        margin-top: 0;
     }
+
+
 
     .sarlavxa-proces {
         width: 100%;
         padding: 0;
         position: absolute;
         top: -20px;
-        height: 400px;
         border-radius: 20px;
         color: rgb(255, 255, 255);
-        background-color: rgba(0, 0, 0, 0.329);
-        padding-top: 35px;
     }
 
     .sarlavxa-proces h1 {
@@ -179,7 +175,7 @@
 
     .sarlavxa-proces p {
         font-size: 17px;
-        line-height: 20px;
+        line-height: 28px;
 
     }
 
@@ -201,18 +197,11 @@
 @media screen and (min-width: 992px) and (max-width: 1200px) {
     .sarlavha-container {
         width: 960px;
-        top: 220px;
     }
-
-    .about-sarlavxa {
-        width: 50%;
-        height: 400px;
-    }
-
 
     .sarlavxa-proces {
-        width: 50%;
-        height: 400px;
+        width: 90%;
+        margin: 0 auto;
     }
 
     .sarlavxa-proces h1 {
@@ -221,7 +210,7 @@
 
     .sarlavxa-proces p {
         font-size: 16px;
-        line-height: 18px;
+        line-height: 27px;
     }
 }
 

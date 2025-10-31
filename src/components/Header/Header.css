@@ -17,7 +17,6 @@
 .header-back {
   width: 100%;
   height: 100vh;
-  background: url("../../assets/pictures/imag1.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -30,7 +29,14 @@
   position: absolute;
   left: 0;
   z-index: 0;
-  background-color: rgba(0, 0, 0, 0.31);
+  background-color: rgba(0, 0, 0, 0.678);
+}
+
+.header-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
 }
 
 .header-container {
@@ -44,6 +50,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
+  transition: 1s;
 }
 
 .header-container ul {
@@ -124,6 +131,13 @@
   background-repeat: no-repeat;
   background-position: left center;
 }
+
+.container.header-container.white {
+  background-color: white;
+  border: 2px solid black;
+}
+
+
 
 /* Bayroqcha fonlari */
 .flag-uz {
@@ -216,7 +230,10 @@
   }
 
   .header-bars {
+
     display: block;
+    transform: rotate(180deg);
+    margin-bottom: 20px;
   }
 }
 
