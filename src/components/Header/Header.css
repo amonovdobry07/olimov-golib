@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 .container {
   max-width: 1200px;
-  height: 40px;
   border-radius: 20px;
   background-color: white;
-  margin: 0 auto;
+  margin: 10px auto;
+  font-family: 'Poppins', sans-serif;
+  font-optical-sizing: auto;
+  border-radius: 30px;
 }
 
 .header-back {
@@ -211,6 +215,7 @@
   .header-container {
     padding: 10px 30px;
     width: 90%;
+    border-radius: 4rem;
   }
 
   .header-contact {
