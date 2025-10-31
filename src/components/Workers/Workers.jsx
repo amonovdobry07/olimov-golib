@@ -38,7 +38,7 @@ const ContactForm = () => {
                   <i className="fa-solid fa-phone"></i> +998 (99) 707‒63‒24
                 </a>
 
-                <a href="https://mail.google.com/mail/golimov848@gmail.com" target="_blank"
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=golimov848@gmail.com" target="_blank"
                   rel="noopener noreferrer" aria-label="Telefon">
                   <i class="fa-solid fa-envelope"></i> {t(`Email`)}
                 </a>
