@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import "./Workers.css";
 const ContactForm = () => {
 
-  const {t, i18n} = useTranslation()
+  const { t, i18n } = useTranslation()
 
   return (
     <>
@@ -13,7 +13,7 @@ const ContactForm = () => {
             <div className="contact_info">
               <h2>{t(`Bizbilanboglaning`)}</h2>
               <p className="contact_desc">
-                  {t(`Savollaringizbolsa`)}
+                {t(`Savollaringizbolsa`)}
               </p>
 
               <div className="social_links">
@@ -38,7 +38,7 @@ const ContactForm = () => {
                   <i className="fa-solid fa-phone"></i> +998 (99) 707‒63‒24
                 </a>
 
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ogabekomonov79@gamil.com" target="_blank"
+                <a href="https://mail.google.com/mail/golimov848@gmail.com" target="_blank"
                   rel="noopener noreferrer" aria-label="Telefon">
                   <i class="fa-solid fa-envelope"></i> {t(`Email`)}
                 </a>
