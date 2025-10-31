@@ -29,63 +29,63 @@ const About = () => {
     {
       id: 1,
       rasm: gips1,
-      price: "1 200 000"+" "+t(`sum`),
+      price: "1 200 000" + " " + t(`sum`),
       workabout: t(`ishlar1`),
       duration: "2" + " " + t(`day`),
     },
     {
       id: 2,
       rasm: gips2,
-      price: "1 700 000"+" "+t(`sum`),
+      price: "1 700 000" + " " + t(`sum`),
       workabout: t(`ishlar2`),
       duration: "3" + " " + t(`day`),
     },
     {
       id: 3,
       rasm: gips3,
-      price: "1 900 000"+" "+t(`sum`),
+      price: "1 900 000" + " " + t(`sum`),
       workabout: t(`ishlar3`),
       duration: "1" + " " + t(`day`),
     },
     {
       id: 4,
       rasm: gips4,
-      price: "2 100 000"+" "+t(`sum`),
+      price: "2 100 000" + " " + t(`sum`),
       workabout: t(`ishlar4`),
       duration: "4" + " " + t(`day`),
     },
     {
       id: 5,
       rasm: gips5,
-      price: "1 200 000"+" "+t(`sum`),
+      price: "1 200 000" + " " + t(`sum`),
       workabout: t(`ishlar5`),
       duration: "2" + " " + t(`day`),
     },
     {
       id: 6,
       rasm: gips6,
-      price: "1 200 000"+" "+t(`sum`),
+      price: "1 200 000" + " " + t(`sum`),
       workabout: t(`ishlar6`),
       duration: "3" + " " + t(`day`),
     },
     {
       id: 7,
       rasm: gips7,
-      price: "1 200 000"+" "+t(`sum`),
+      price: "1 200 000" + " " + t(`sum`),
       workabout: t(`ishlar7`),
       duration: "6" + " " + t(`day`),
     },
     {
       id: 8,
       rasm: gips8,
-      price: "1 200 000"+" "+t(`sum`),
+      price: "1 200 000" + " " + t(`sum`),
       workabout: t(`ishlar8`),
       duration: "2" + " " + t(`day`),
     },
     {
       id: 9,
       rasm: gips9,
-      price: "1 200 000"+" "+t(`sum`),
+      price: "1 200 000" + " " + t(`sum`),
       workabout: t(`ishlar9`),
       duration: "1" + " " + t(`day`),
     },
@@ -120,7 +120,7 @@ const About = () => {
                   ></div>
 
                   <h1>{card.workabout}</h1>
-                  <h3>{card.duration}</h3>
+
                   <p>{card.price}</p>
 
                   <button
