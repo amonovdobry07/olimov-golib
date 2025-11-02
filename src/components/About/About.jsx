@@ -32,6 +32,7 @@ const About = () => {
       price: "1 200 000" + " " + t(`sum`),
       workabout: t(`ishlar1`),
       duration: "2" + " " + t(`day`),
+      haqida: t(`haqida`),
     },
     {
       id: 2,
@@ -39,6 +40,7 @@ const About = () => {
       price: "1 700 000" + " " + t(`sum`),
       workabout: t(`ishlar2`),
       duration: "3" + " " + t(`day`),
+      haqida: t(`haqida1`),
     },
     {
       id: 3,
@@ -46,6 +48,7 @@ const About = () => {
       price: "1 900 000" + " " + t(`sum`),
       workabout: t(`ishlar3`),
       duration: "1" + " " + t(`day`),
+      haqida: t(`haqida2`),
     },
     {
       id: 4,
@@ -53,6 +56,7 @@ const About = () => {
       price: "2 100 000" + " " + t(`sum`),
       workabout: t(`ishlar4`),
       duration: "4" + " " + t(`day`),
+      haqida: t(`haqida3`),
     },
     {
       id: 5,
@@ -60,6 +64,7 @@ const About = () => {
       price: "1 200 000" + " " + t(`sum`),
       workabout: t(`ishlar5`),
       duration: "2" + " " + t(`day`),
+      haqida: t(`haqida4`),
     },
     {
       id: 6,
@@ -67,6 +72,7 @@ const About = () => {
       price: "1 200 000" + " " + t(`sum`),
       workabout: t(`ishlar6`),
       duration: "3" + " " + t(`day`),
+      haqida: t(`haqida5`),
     },
     {
       id: 7,
@@ -74,6 +80,7 @@ const About = () => {
       price: "1 200 000" + " " + t(`sum`),
       workabout: t(`ishlar7`),
       duration: "6" + " " + t(`day`),
+      haqida: t(`haqida6`),
     },
     {
       id: 8,
@@ -81,6 +88,7 @@ const About = () => {
       price: "1 200 000" + " " + t(`sum`),
       workabout: t(`ishlar8`),
       duration: "2" + " " + t(`day`),
+      haqida: t(`haqida7`),
     },
     {
       id: 9,
@@ -88,6 +96,7 @@ const About = () => {
       price: "1 200 000" + " " + t(`sum`),
       workabout: t(`ishlar9`),
       duration: "1" + " " + t(`day`),
+      haqida: t(`haqida8`),
     },
   ];
 
@@ -113,7 +122,12 @@ const About = () => {
             {ishlar.slice(0, visible).map((card) => {
               const isOpen = openCards.includes(card.id);
               return (
-                <div className="cards" key={card.id} data-aos="fade-up" data-aos-duration="1500">
+                <div
+                  className="cards"
+                  key={card.id}
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                >
                   <div
                     className="cards-img"
                     style={{ backgroundImage: `url(${card.rasm})` }}
@@ -131,11 +145,7 @@ const About = () => {
                   </button>
 
                   <div className={isOpen ? "cars-text add-text" : "cars-text"}>
-                    ra dolorum maxime. Aliquam, perferendis placeat? Reiciendis
-                    deleniti assumenda quis consequuntur. Explicabo nemo rem
-                    nisi temporibus voluptates ipsam dolore corporis tenetur
-                    odit velit illo quam officia ea possimus doloremque, sequi
-                    soluta.
+                    {card.haqida}
                     <br />
                     <button onClick={() => toggleCard(card.id)}>
                       {t(`Back`)}
