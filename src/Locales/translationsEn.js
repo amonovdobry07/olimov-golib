@@ -47,6 +47,7 @@ const translationsEn = {
     "In this course, you will learn to build moving models of cars, tractors, trucks, and other vehicles. Practical lessons include mechanical systems, wheel mechanisms, motor installation, and motion testing. By the end of the course, you will master creating an actual working, movable model.",
   haqida8:
     "In the aviation course, you will learn to make models of airplanes, helicopters, and other flying machines. Lessons cover aerodynamics basics, model structure, body construction, and painting techniques. By the end, you will have a realistic aircraft model ready for presentation.",
+  gachuyma: "Gypsum Carving — A Symbol of Art and Elegance"
 };
 
 export default translationsEn;

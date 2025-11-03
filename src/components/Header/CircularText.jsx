@@ -33,6 +33,7 @@ const TextType = ({
     const cursorRef = useRef(null);
     const containerRef = useRef(null);
 
+    // 🟢 text prop o'zgarsa qayta ishlaydigan holat
     const textArray = useMemo(() => (Array.isArray(text) ? text : [text]), [text]);
 
     const getRandomSpeed = useCallback(() => {
@@ -77,6 +78,7 @@ const TextType = ({
         }
     }, [showCursor, cursorBlinkDuration]);
 
+    // 🟢 Asosiy typing animatsiya useEffect (to‘g‘rilangan)
     useEffect(() => {
         if (!isVisible) return;
 
@@ -128,7 +130,6 @@ const TextType = ({
         }
 
         return () => clearTimeout(timeout);
-        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [
         currentCharIndex,
         displayedText,
@@ -143,7 +144,8 @@ const TextType = ({
         isVisible,
         reverseMode,
         variableSpeed,
-        onSentenceComplete
+        onSentenceComplete,
+        text // 🟢 MUHIM QO‘SHIMCHA: tarjima o‘zgarsa qayta ishga tushadi
     ]);
 
     const shouldHideCursor =

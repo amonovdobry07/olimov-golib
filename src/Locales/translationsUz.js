@@ -36,9 +36,8 @@ const translationsUz = {
   haqida5: "Ushbu kursda yuk vagonlari, konteynerlar va texnik transport modellarini yasash amaliyoti o‘rgatiladi. O‘quvchilar real o‘lchamdagi chizmalar asosida maket yasash, bo‘yash va montaj jarayonlarini bajaradilar. Kurs yakunida siz to‘liq ishlangan texnik vagon modelini tayyorlay olasiz.",
   haqida6: "Ushbu kursda siz temiryo‘l infratuzilmasi maketlarini yaratish texnologiyasini o‘rganasiz. Darslarda relslar, bekatlar va poyezd qismlarini to‘g‘ri joylashtirish, o‘lchov va proporsiyalarni saqlash hamda bezak elementlarini qo‘llash usullari o‘rgatiladi. Yakunda siz real temiryo‘l ko‘rinishidagi maketni to‘liq tayyorlab chiqasiz.",
   haqida7: "Kursda siz avtomobil, traktor, yuk mashinasi va boshqa texnikalarning harakatlanuvchi maketlarini yasashni o‘rganasiz. Amaliy mashg‘ulotlarda mexanik tizimlar, g‘ildirak mexanizmi, motor o‘rnatish va harakat sinovlari bajariladi. Kurs yakunida siz ishlaydigan, ya’ni haqiqatan ham harakatlanuvchi model yaratishni o‘zlashtirasiz.",
-  haqida8: "Aviatsiya yo‘nalishidagi bu kursda siz samolyot, vertolyot va boshqa uchuvchi texnikalarning maketlarini yasashni o‘rganasiz. Darslar davomida aerodinamika asoslari, model tuzilishi, korpusni yasash va bo‘yash texnikalari bilan tanishasiz. Kurs yakunida siz real samolyotga o‘xshash aviatsion maketni tayyorlab, uni taqdimotga tayyorlashingiz mumkin."
-
-
+  haqida8: "Aviatsiya yo‘nalishidagi bu kursda siz samolyot, vertolyot va boshqa uchuvchi texnikalarning maketlarini yasashni o‘rganasiz. Darslar davomida aerodinamika asoslari, model tuzilishi, korpusni yasash va bo‘yash texnikalari bilan tanishasiz. Kurs yakunida siz real samolyotga o‘xshash aviatsion maketni tayyorlab, uni taqdimotga tayyorlashingiz mumkin.",
+  gachuyma: "Ganch O‘ymakorlik — San’at va Nafosat Timsoli"
 
 
 
